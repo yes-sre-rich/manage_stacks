@@ -1,0 +1,4 @@
+aws route53 list-hosted-zones --query HostedZones[].[Id,Name] --output text | grep cloud | awk -F"/" '{print $3}'
+
+Z1A7MZMQWUPMUU	cloud.mapquest.com.
+
